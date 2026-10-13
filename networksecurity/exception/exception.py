@@ -12,7 +12,7 @@ class NetworkSecurityException(Exception):
         self.lineno=exc_tb.tb_lineno if exc_tb else None
         self.file_name=exc_tb.tb_frame.f_code.co_filename if exc_tb else None
 
-    def __str__(self):c
+    def __str__(self):
         return "Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(
         self.file_name, self.lineno, str(self.error_message))
 
