@@ -6,23 +6,22 @@ of your project, such as its metadata, dependencies, and more
 '''
 
 from setuptools import find_packages,setup
+from pathlib import Path
 from typing import List
 
 def get_requirements()->List[str]:
     """
-    Thiss function will return list of requirements
+    This function will return list of requirements
     
     """
     requirement_lst:List[str]=[]
+    req_file = Path(__file__).parent / 'requirements.txt'
     try:
-        with open('requirements.txt','r') as file:
-            #Read lines from the file
-            lines=file.readlines()
-            ## Process each line
-            for line in lines:
+        with open(req_file,'r') as file:
+            for line in file:
                 requirement=line.strip()
-                ## ignore empty lines and -e .
-                if requirement and requirement!= '-e .':
+                ## ignore empty lines and pip options such as -e .
+                if requirement and not requirement.startswith('-'):
                     requirement_lst.append(requirement)
     except FileNotFoundError:
         print("requirements.txt file not found")
@@ -33,7 +32,7 @@ setup(
     name="NetworkSecurity",
     version="0.0.1",
     author="Amit Pawar",
-    author_email="amitpawa16902@gmail.com",
+    author_email="amitpawar16902@gmail.com",
     packages=find_packages(),
     install_requires=get_requirements()
 )
