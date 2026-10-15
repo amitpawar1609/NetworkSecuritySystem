@@ -233,8 +233,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 📬 Contact
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-profile](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+- GitHub: [https://github.com/amitpawar1609]
+- LinkedIn: [https://www.linkedin.com/in/amit-v-pawarpune]
+- Email: amitpawar16902@gmail.com
 
 ⭐ If you found this project useful, please give it a star!
