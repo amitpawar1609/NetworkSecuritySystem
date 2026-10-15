@@ -1,0 +1,8 @@
+[2026-10-15 19:15:36,798] 52 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2026-10-15 19:15:36,798] 54 root - INFO - Starting data transformation
+[2026-10-15 19:15:36,869] 40 root - INFO - Entered get_data_transformer_object method
+[2026-10-15 19:15:36,869] 43 root - INFO - Initialize KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-10-15 19:15:36,924] 45 root - INFO - Entered the save_object method of MainUtils class
+[2026-10-15 19:15:36,926] 49 root - INFO - Exited the save_object method of MainUtils class
+[2026-10-15 19:15:36,927] 45 root - INFO - Entered the save_object method of MainUtils class
+[2026-10-15 19:15:36,929] 49 root - INFO - Exited the save_object method of MainUtils class
